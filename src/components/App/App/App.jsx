@@ -3,16 +3,14 @@ import { Component } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { imagesMaper } from '../../utils/imagesmaper';
-import { Section } from 'components/Section';
+import { imagesMaper } from 'utils/imagesmaper';
+import { Section } from '../Section';
 import { Searchbar } from '../Searchbar';
-import { ImageGallery } from 'components/ImageGallery';
-import { Loader } from 'components/Loader';
-import { Button } from 'components/Button';
+import { ImageGallery } from '../ImageGallery';
+import { Loader } from '../Loader/Loader';
+import { Button } from '../Button';
 import { Container } from './App.styled';
-
 import * as API from '../../api/pixabayAPI';
-
 export class App extends Component {
   state = {
     images: null,
